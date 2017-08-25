@@ -1,0 +1,21 @@
+.capitalServiceContainer {
+  width: 100%; }
+  .capitalServiceContainer > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    .capitalServiceContainer > div .item {
+      margin: 1rem 0;
+      padding: 0;
+      text-align: center; }
+      .capitalServiceContainer > div .item dt {
+        padding: 0;
+        margin: 0; }
+        .capitalServiceContainer > div .item dt img {
+          width: 100%; }
+      .capitalServiceContainer > div .item dd {
+        margin: 0;
+        padding: 0;
+        font-size: 0.9rem; }

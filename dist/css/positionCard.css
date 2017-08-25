@@ -1,0 +1,20 @@
+.joinUsContainer {
+  background: #fff;
+  margin-top: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem; }
+  .joinUsContainer .positionImg {
+    margin: 0.8rem 0 2rem; }
+    .joinUsContainer .positionImg img {
+      width: 100%; }
+  .joinUsContainer .positionTitle {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #333; }
+  .joinUsContainer .positionStatement, .joinUsContainer .positionRequire {
+    margin-bottom: 1rem;
+    color: #999; }
+    .joinUsContainer .positionStatement h3, .joinUsContainer .positionRequire h3 {
+      font-size: 0.7rem; }
+    .joinUsContainer .positionStatement p, .joinUsContainer .positionRequire p {
+      margin: 0.5rem 0; }

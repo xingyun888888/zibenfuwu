@@ -1,0 +1,36 @@
+@import url(./normalize.css);
+.consultCardContainer {
+  margin-bottom: 0.3rem;
+  padding: 0.8rem;
+  height: 6rem;
+  background: #fff; }
+  .consultCardContainer .leftContent {
+    float: left;
+    width: 20%;
+    text-align: center;
+    height: 100%;
+    line-height: 100%; }
+    .consultCardContainer .leftContent .cardImg {
+      display: inline-block;
+      height: 4rem;
+      width: 4rem;
+      line-height: 4rem; }
+      .consultCardContainer .leftContent .cardImg img {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle; }
+  .consultCardContainer .rightContent {
+    float: left;
+    height: 100%;
+    padding: 0.8rem 0;
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .consultCardContainer .rightContent h3 {
+      flex: 1;
+      font-size: 1rem;
+      color: #333; }
+    .consultCardContainer .rightContent p {
+      font-size: 0.9rem;
+      color: #999; }

@@ -1,0 +1,33 @@
+@import url(./normalize.css);
+.title {
+  margin: 0.5rem 0; }
+  .title b {
+    display: inline-block;
+    width: 0.3rem;
+    background-color: #539ffd;
+    height: 1rem;
+    vertical-align: middle;
+    margin-right: 0.3rem; }
+  .title span {
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    color: #539ffd; }
+
+.companyProfileContainer {
+  padding: 0.8rem; }
+  .companyProfileContainer .companyProfile, .companyProfileContainer .industryProfile {
+    padding-top: 0.8rem;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: #999; }
+    .companyProfileContainer .companyProfile h3, .companyProfileContainer .industryProfile h3 {
+      color: #333;
+      font-size: 0.9rem; }
+    .companyProfileContainer .companyProfile p, .companyProfileContainer .industryProfile p {
+      margin: 1rem 0;
+      font-size: 0.9rem;
+      font-weight: 300; }
+    .companyProfileContainer .companyProfile .legalNotice, .companyProfileContainer .industryProfile .legalNotice {
+      color: #f9344c;
+      font-size: 0.8rem; }

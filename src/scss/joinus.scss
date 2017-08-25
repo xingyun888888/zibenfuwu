@@ -1,0 +1,29 @@
+@import "./normalize.css";
+@import "./valiable.scss";
+.joinUsContainer{
+  background:$white;
+  margin-top:0.4rem;
+  padding:0.4rem 0.8rem;
+  font-size:0.8rem;
+  .positionImg{
+    margin:0.8rem 0 2rem;
+    img{
+      width:100%;
+    }
+  }
+  .positionTitle{
+    font-size:0.9rem;
+    margin-bottom:1rem;
+    color:$gray3;
+  }
+  .positionStatement,.positionRequire{
+    margin-bottom:1rem;
+    color:$gray9;
+    h3{
+      font-size:0.8rem;
+    }
+    p{
+      margin:0.5rem 0;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "./normalize.css";
+@import "./valiable.scss";
+.headImage{
+  img{
+
+  }
+}
+.title{
+  margin:0.5rem 0;
+  b{
+    display:inline-block;
+    width:0.3rem;
+    background-color:$theme;
+    height:1rem;
+    vertical-align:middle;
+    margin-right:0.3rem;
+  }
+  span{
+    font-size:1rem;
+    display:inline-block;
+    vertical-align: middle;
+    color:#539ffd;
+  }
+}
+.companyProfileContainer{
+  padding:0.8rem;
+  .companyProfile,.industryProfile{
+    padding-top:0.8rem;
+    margin:1rem 0;
+    font-size:0.9rem;
+    color:$gray9;
+    h3{
+      color:$gray3;
+      font-size:0.9rem;
+    }
+    p{
+      margin:1rem 0;
+      font-size:0.9rem;
+      font-weight:300;
+    }
+    .legalNotice{
+      color:$red;
+      font-size:0.8rem;
+    }
+  }
+}

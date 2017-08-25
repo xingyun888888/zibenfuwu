@@ -1,0 +1,125 @@
+img {
+  width: 100%;
+  vertical-align: middle; }
+
+.homeBtn a {
+  width: 50%; }
+
+.homeBtn p {
+  text-align: center;
+  color: #333; }
+
+.homeBtn img {
+  padding: 30% 30% 0;
+  box-sizing: border-box; }
+
+.slider-slide img {
+  height: 300px; }
+
+.layer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.layerCon {
+  width: 80%;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 20px; }
+
+.layerHead {
+  padding: 0 1rem;
+  text-align: center; }
+
+.layerMsg {
+  padding: 0 1rem;
+  text-align: center; }
+
+.layerBtn {
+  border-top: 1px solid #c5c5c5; }
+  .layerBtn button {
+    width: 50%;
+    height: 1.5rem;
+    background-color: transparent;
+    border: 0; }
+    .layerBtn button:first-child {
+      border-right: 1px solid #c5c5c5; }
+
+.topTitle {
+  height: 2rem;
+  line-height: 2rem;
+  color: #fff;
+  background-color: #323232;
+  position: relative;
+  text-align: center; }
+  .topTitle a {
+    padding-left: .8rem;
+    background: url("../imgs/tri.png") no-repeat center left;
+    background-size: 28%;
+    position: absolute;
+    left: .5rem;
+    color: #fff; }
+  .topTitle p {
+    margin: 0; }
+
+.uploadType {
+  line-height: 2rem;
+  vertical-align: middle;
+  text-align: center; }
+  .uploadType input {
+    width: 15%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin-left: 3%;
+    text-align: center;
+    border: 0;
+    padding: 0; }
+  .uploadType div {
+    display: inline-block;
+    width: 28%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin-left: 3%; }
+    .uploadType div:first-child {
+      margin-left: 0; }
+    .uploadType div span {
+      display: inline-block;
+      width: 100%;
+      height: 1.5rem;
+      line-height: 1.5rem;
+      cursor: pointer;
+      background-color: #fff; }
+
+.uploadHandle {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #fff;
+  padding: .3rem 0; }
+  .uploadHandle div {
+    text-align: center;
+    height: 2.2rem;
+    background-color: #1bc148;
+    border-radius: .5rem;
+    color: #fff; }
+  .uploadHandle span {
+    display: inline-block;
+    width: 100%;
+    line-height: 1rem;
+    text-align: center;
+    cursor: pointer; }
+
+.uploadMsg p {
+  margin: 0;
+  color: #f74545;
+  padding: .2rem .5rem; }
