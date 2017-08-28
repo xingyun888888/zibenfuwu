@@ -3,12 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>合作洽谈</title>
-    <meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/mobiscroll.2.13.2.css">
     <link rel="stylesheet" href="../css/businessCooperation.css">
-    <style>
-        .mbsc-android-holo .dwv { text-align:left;text-indent:.8em; }
-    </style>
+    <script src="../js/jquery-1.9.1.js"></script>
+    <script src="../js/mobiscroll.2.13.2.js"></script>
+    <script>
+        $(function () {
+            $(".gender-select").scroller($.extend(
+                {
+                    preset: 'select'
+                },
+                {
+                    theme: 'default',
+                    mode: 'scroller',
+                    display: 'modal',
+                    animate: 'fade'
+                }
+            ));
+            $(".company-select").scroller($.extend(
+                {
+                    preset: 'select'
+                },
+                {
+                    theme: 'default',
+                    mode: 'scroller',
+                    display: 'modal',
+                    animate: 'fade'
+                }
+            ));
+            $('.select-content').scroller($.extend(
+                {
+                    preset: 'select',
+                    group: true,
+                    width: 50
+                },
+                {
+                    theme: 'default',
+                    mode: 'scroller',
+                    display: 'modal',
+                    animate: 'fade'
+                }
+            ));
+        })
+    </script>
 </head>
 <body>
 <div class="businessCooperationContainer">
@@ -24,7 +63,13 @@
             <b></b>
             <span>性别</span>
         </div>
-        <input  />
+        <!--<input  />-->
+        <div data-role="fieldcontain" class="gender-select">
+            <select id="gender" class="gender-opt" data-role="none">
+                <option value="1">先生</option>
+                <option value="2">女士</option>
+            </select>
+        </div>
     </div>
     <div class="formItem">
         <div class="listTitle">
@@ -45,47 +90,37 @@
             <b></b>
             <span>从事行业</span>
         </div>
-        <input  />
+
+        <div data-role="fieldcontain" class="select-content">
+            <!--<label for="names">行业选择</label>-->
+            <!--<input  />-->
+            <select id="names" class="select-opt" data-role="none">
+                <optgroup label="一级行业">
+                    <option value="0">《疯狂的石头》</option>
+                    <option value="1">《夜店》</option>
+                    <option value="2">《让子弹飞》</option>
+                    <option value="3">《非诚勿扰》</option>
+                </optgroup>
+                <optgroup label="惊悚片">
+                    <option value="78">《电锯惊魂》</option>
+                    <option value="79">《死神来了》</option>
+                    <option value="80">《惊声尖叫》</option>
+                    <option value="81">《致命弯道》</option>
+                    <option value="82">《异次元杀阵》</option>
+                    <option value="83">《生化危机》</option>
+                    <option value="84">《异形》</option>
+                </optgroup>
+                <optgroup label="青春片">
+                    <option value="118">《关于莉莉周的一切》</option>
+                    <option value="119">《东邪西毒》</option>
+                    <option value="120">《天使爱美丽》</option>
+                    <option value="121">《可爱的骨头》</option>
+                    <option value="122">《猜火车》</option>
+                </optgroup>
+            </select>
+        </div>
     </div>
 
-    <ul id="treelist">
-        <li>
-            <span>奥迪</span>
-            <ul>
-                <li>奥迪A3</li>
-                <li>奥迪A4L</li>
-                <li>奥迪A6L</li>
-                <li>奥迪Q3</li>
-                <li>奥迪Q5</li>
-                <li>奥迪A4</li>
-                <li>奥迪A6</li>
-                <li>奥迪A1</li>
-                <li>奥迪A3(进口)</li>
-            </ul>
-        </li>
-        <li>
-            <span>宝马</span>
-            <ul>
-                <li>宝马X1</li>
-                <li>宝马i3</li>
-                <li>宝马1系</li>
-                <li>宝马3系</li>
-                <li>宝马5系</li>
-            </ul>
-        </li>
-        <li>
-            <span>奔驰</span>
-            <ul>
-                <li>奔驰A级</li>
-                <li>奔驰C级</li>
-                <li>奔驰E级</li>
-                <li>奔驰S级</li>
-                <li>奔驰GLK级</li>
-                <li>奔驰CLA级</li>
-                <li>奔驰CLS级</li>
-            </ul>
-        </li>
-    </ul>
 
 
     <div class="formItem">
@@ -100,7 +135,14 @@
             <b></b>
             <span>申请合作公司</span>
         </div>
-        <input  />
+        <!--<input  />-->
+        <div data-role="fieldcontain" class="company-select">
+            <!--<label for="city">选择合作公司</label>-->
+            <select id="company" class="select-opt" data-role="none">
+                <option value="1">智媒网络科技有限公司</option>
+                <option value="2">创投孵化有限公司</option>
+            </select>
+        </div>
     </div>
 
     <div class="formSave">
@@ -108,23 +150,5 @@
     </div>
 </div>
 <script src="../js/rem.js"></script>
-<script src="../js/zepto.js"></script>
-<script>
-    $(function () {
-        var i = Math.floor($('#treelist>li').length / 2),
-            j = Math.floor($('#treelist>li').eq(i).find('ul li').length / 2);
-        $("#treelist").mobiscroll().treelist({
-            theme: "android-ics light",
-            lang: "zh",
-            defaultValue: [i,j],
-            cancelText: null,
-            placeholder: '选择行业',
-            headerText: function (valueText) { return "选择行业"; },
-            formatResult: function (array) { //返回自定义格式结果
-                return $('#treelist>li').eq(array[0]).children('span').text() +' '+ $('#treelist>li').eq(array[0]).find('ul li').eq(array[1]).text().trim(' ');
-            }
-        });
-    })
-</script>
 </body>
 </html>

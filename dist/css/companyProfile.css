@@ -1,4 +1,7 @@
 @import url(./normalize.css);
+.headImage img {
+  width: 100%; }
+
 .title {
   margin: 0.5rem 0; }
   .title b {
@@ -27,7 +30,7 @@
     .companyProfileContainer .companyProfile p, .companyProfileContainer .zhimeiLocation p, .companyProfileContainer .StatementOfUse p {
       margin: 1rem 0;
       font-size: 0.9rem;
-      font-weight: 300; }
+      font-weight: 400; }
     .companyProfileContainer .companyProfile .legalNotice, .companyProfileContainer .zhimeiLocation .legalNotice, .companyProfileContainer .StatementOfUse .legalNotice {
       color: #f9344c;
       font-size: 0.8rem; }

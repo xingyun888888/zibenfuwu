@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>回电咨询</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/mobiscroll.2.13.2.css">
+    <link rel="stylesheet" href="../css/callbackConsult.css">
+</head>
+<body>
+    <div class="businessCooperationContainer">
+        <div class="formItem">
+            <div class="listTitle">
+                <b></b>
+                <span>姓名</span>
+            </div>
+            <input  />
+        </div>
+        <div class="formItem">
+            <div class="listTitle">
+                <b></b>
+                <span>性别</span>
+            </div>
+            <div data-role="fieldcontain" class="gender-select">
+                <select id="gender" class="gender-opt" data-role="none">
+                    <option value="1">先生</option>
+                    <option value="2">女士</option>
+                </select>
+            </div>
+        </div>
+        <div class="formItem">
+            <div class="listTitle">
+                <b></b>
+                <span>手机号码</span>
+            </div>
+            <input  />
+        </div>
+        <div class="formItem product">
+            <div class="listTitle">
+                <b></b>
+                <span>咨询产品</span>
+            </div>
+            <div class="productNames">
+                <span>创投达人汇</span>
+                <span>深港访学团</span>
+                <span>创投学苑</span>
+                <span>新四板</span>
+                <span>路演通</span>
+                <span>商业计划书</span>
+                <span>企业估值</span>
+                <span>商业模式</span>
+                <span>股权激励</span>
+            </div>
+        </div>
+
+
+        <div class="readPrototal"><input type="checkbox"/>我已阅读并同意<a href="">《资本服务综合体平台用户协议》</a></div>
+        <div class="formSave">
+            <a href="javascript:void(0)" >确认提交</a>
+        </div>
+    </div>
+    <script src="../js/rem.js"></script>
+    <script src="../js/jquery-1.9.1.js"></script>
+    <script src="../js/mobiscroll.2.13.2.js"></script>
+    <script>
+        $(function () {
+            $(".gender-select").scroller($.extend(
+                {
+                    preset: 'select'
+                },
+                {
+                    theme: 'default',
+                    mode: 'scroller',
+                    display: 'modal',
+                    animate: 'fade'
+                }
+            ));
+            $(".company-select").scroller($.extend(
+                {
+                    preset: 'select'
+                },
+                {
+                    theme: 'default',
+                    mode: 'scroller',
+                    display: 'modal',
+                    animate: 'fade'
+                }
+            ));
+            $('.select-content').scroller($.extend(
+                {
+                    preset: 'select',
+                    group: true,
+                    width: 50
+                },
+                {
+                    theme: 'default',
+                    mode: 'scroller',
+                    display: 'modal',
+                    animate: 'fade'
+                }
+            ));
+        })
+
+        $(".productNames").on("click","span",function(){
+            if($(this).hasClass("active")){
+              $(this).removeClass("active");
+            }else{
+                $(this).addClass("active");
+            }
+        })
+
+    </script>
+</body>
+</html>

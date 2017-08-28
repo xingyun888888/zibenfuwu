@@ -38,7 +38,49 @@
       color:$gray6;
       border-bottom:1px solid #ccc;
     }
+
+
+
   }
+  .product{
+     width:100%;
+     display:block;
+    .productNames{
+      padding-top:0.5rem;
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      span{
+        width:30%;
+        margin:0.3rem 0;
+        text-align:center;
+        display:inline-block;
+        border-radius:10rem;
+        background:$borderColor;
+        padding:0.5rem;
+        color:$gray9;
+      }
+      span.active{
+        background:$theme;
+        color:$white;
+      }
+    }
+  }
+
+  .readPrototal{
+    margin-top:5rem;
+    color:$gray9;
+    input{
+      vertical-align:top;
+      margin-right:0.5rem;
+    }
+    a{
+      color:$theme;
+    }
+  }
+
+
   .formSave{
     margin-top:2rem;
     width:100%;

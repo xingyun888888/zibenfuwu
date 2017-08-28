@@ -32,6 +32,35 @@
       padding-left: 0.5rem;
       color: #666;
       border-bottom: 1px solid #ccc; }
+  .businessCooperationContainer .product {
+    width: 100%;
+    display: block; }
+    .businessCooperationContainer .product .productNames {
+      padding-top: 0.5rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      .businessCooperationContainer .product .productNames span {
+        width: 30%;
+        margin: 0.3rem 0;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10rem;
+        background: #f2f2f2;
+        padding: 0.5rem;
+        color: #999; }
+      .businessCooperationContainer .product .productNames span.active {
+        background: #539ffd;
+        color: #fff; }
+  .businessCooperationContainer .readPrototal {
+    margin-top: 5rem;
+    color: #999; }
+    .businessCooperationContainer .readPrototal input {
+      vertical-align: top;
+      margin-right: 0.5rem; }
+    .businessCooperationContainer .readPrototal a {
+      color: #539ffd; }
   .businessCooperationContainer .formSave {
     margin-top: 2rem;
     width: 100%;
