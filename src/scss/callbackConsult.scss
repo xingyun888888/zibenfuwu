@@ -71,9 +71,14 @@
   .readPrototal{
     margin-top:5rem;
     color:$gray9;
+    font-size:0.9rem;
     input{
-      vertical-align:top;
       margin-right:0.5rem;
+      height:1rem;
+      vertical-align:middle;
+    }
+    label{
+      height:1rem;
     }
     a{
       color:$theme;

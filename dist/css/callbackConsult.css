@@ -55,10 +55,14 @@
         color: #fff; }
   .businessCooperationContainer .readPrototal {
     margin-top: 5rem;
-    color: #999; }
+    color: #999;
+    font-size: 0.9rem; }
     .businessCooperationContainer .readPrototal input {
-      vertical-align: top;
-      margin-right: 0.5rem; }
+      margin-right: 0.5rem;
+      height: 1rem;
+      vertical-align: middle; }
+    .businessCooperationContainer .readPrototal label {
+      height: 1rem; }
     .businessCooperationContainer .readPrototal a {
       color: #539ffd; }
   .businessCooperationContainer .formSave {

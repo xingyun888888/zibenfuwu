@@ -3,21 +3,30 @@
   width: 100%;
   padding: 0.8rem; }
   .exchangeCardContainer .cardTitle {
+    margin-top: 1rem;
     width: 100%;
     text-align: center;
     font-size: 0.9rem; }
+    .exchangeCardContainer .cardTitle b {
+      display: inline-block;
+      width: 0.8rem;
+      height: 0.8rem;
+      vertical-align: middle;
+      background: url("../images/icon/attention.png") no-repeat center center;
+      background-size: 100%;
+      margin-right: 0.2rem; }
     .exchangeCardContainer .cardTitle span {
-      color: #539ffd; }
+      color: #539ffd;
+      font-size: 0.9rem; }
   .exchangeCardContainer .imgContent {
-    margin-top: 1rem;
     width: 100%;
     overflow: hidden;
-    padding: 1.2rem; }
+    padding: 0.5rem 1.2rem; }
     .exchangeCardContainer .imgContent .myPhoto {
       margin-bottom: 1rem;
       text-align: center;
       width: 100%;
-      min-height: 10rem;
+      height: 12rem;
       border: 1px dotted #aaa;
       background: url("../images/defaultPhoto.png") no-repeat center; }
       .exchangeCardContainer .imgContent .myPhoto img {
@@ -30,8 +39,11 @@
       margin-top: 1rem;
       text-align: center;
       width: 100%;
-      min-height: 10rem;
+      overflow: hidden;
+      height: 12rem;
       border: 1px dotted #aaa; }
       .exchangeCardContainer .imgContent .platformPhoto img {
         width: 100%;
         height: 100%; }
+  .exchangeCardContainer .exchangeButton {
+    text-align: center; }

@@ -16,15 +16,15 @@
           <input type="file" style="visibility:hidden" id="photo" name="photo" >
           <div class="imgContent">
               <div class="myPhoto">
-                  <img src="" alt="">
+                  <img src="#" alt="">
               </div>
           </div>
-          <div>
-              <img src="" alt="">
+          <div class="exchangeButton">
+              <img src="" alt="">点击交换名片
           </div>
           <div class="imgContent">
               <div class="platformPhoto">
-                  <img src="" alt="">
+                  <img src="../images/project/default.png" alt="">
               </div>
           </div>
       </form>
@@ -32,5 +32,18 @@
   <script src="../js/rem.js"></script>
   <script src="../js/zepto.js"></script>
   <script src="../js/exchangeCard.js"></script>
+  <script>
+      $(".exchangeButton").click(function(){
+         if($(".myPhoto>img").attr("src")=="#"){
+             alert("请先上传图片")
+             return false ;
+         }else{
+             let myPhoto = $(".myPhoto>img").attr("src");
+             let platformPhoto = $(".platformPhoto>img").attr("src");
+             $(".myPhoto>img").attr("src",platformPhoto);
+             $(".platformPhoto>img").attr("src",myPhoto);
+         }
+      })
+  </script>
 </body>
 </html>
