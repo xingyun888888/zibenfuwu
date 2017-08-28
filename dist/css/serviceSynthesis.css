@@ -1,0 +1,33 @@
+@import url(./normalize.css);
+.invest-cell {
+  padding: 0.8rem;
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  box-sizing: border-box;
+  border-bottom: 2px solid #f2f2f2;
+  position: relative; }
+  .invest-cell .field-icon {
+    line-height: 3.6rem;
+    float: left;
+    width: 10%;
+    height: 2.4rem;
+    margin-right: 0.8rem; }
+  .invest-cell .fieldName {
+    float: left;
+    font-size: 1rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    color: #666;
+    margin-left: 1.5rem; }
+  .invest-cell .investorNumber {
+    float: right;
+    line-height: 2.4rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    color: #999; }
+  .invest-cell .arrow-right {
+    float: right;
+    height: 1.5rem;
+    line-height: 3rem; }

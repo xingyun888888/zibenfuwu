@@ -1,0 +1,131 @@
+@import "./normalize.css";
+@import "./valiable.scss";
+.project-detail-header-container{
+  .header-img{
+    width:100%;
+    height:12rem;
+    img{
+      width:100%;
+      height:12rem;
+    }
+  }
+  .header-content{
+    font-size:0.9rem;
+    padding:0 0.8rem;
+    padding-top:0.5rem;
+    .header-title{
+      h3{
+        color:$gray3;
+        font-weight:500;
+      }
+    }
+    .header-detail{
+      p{
+        margin:0.5rem 0;
+        padding-left:1.2rem;
+        color:$gray9;
+        font-weight:500;
+      }
+      span{
+        color:$gray9;
+        font-weight:500;
+      }
+      .label{
+        background:url('../images/icon/label.png') no-repeat center left;
+        background-size:3.8%;
+        &>span{
+          margin-right:0.5rem;
+        }
+      }
+      .interest{
+        background:url('../images/icon/interest.png') no-repeat center left;
+        background-size:3.8%;
+      }
+      .address{
+        background:url('../images/icon/position.png') no-repeat center left;
+        background-size:3.8%;
+      }
+      .stage{
+        background:url('../images/icon/stage.png') no-repeat center left;
+        background-size:3.8%;
+      }
+      .time{
+        background:url('../images/icon/time.png') no-repeat center left;
+        background-size:3.8%;
+      }
+    }
+  }
+}
+.main-container{
+  padding:0.8rem;
+  .title{
+    margin:0.5rem 0;
+    b{
+      display:inline-block;
+      width:0.3rem;
+      background-color:$theme;
+      height:1rem;
+      vertical-align:middle;
+      margin-right:0.3rem;
+    }
+    span{
+      font-size:1rem;
+      display:inline-block;
+      vertical-align: middle;
+      color:#539ffd;
+    }
+  }
+  .product-profile{
+    margin:1rem 0;
+    font-size:0.9rem;
+    color:$gray6;
+    h3{
+      color:$gray3;
+      font-size:0.9rem;
+    }
+    p{
+      margin:1rem 0;
+      font-size:1rem;
+      font-weight:300;
+    }
+    .profile-detail{
+      padding:0 0.8rem;
+    }
+  }
+  .project-list{
+    margin-bottom:1.5rem;
+    .detail{
+      padding:0 0.8rem;
+      font-size:0.9rem;
+      color:$gray6;
+      p{
+        color:$gray6;
+      }
+    }
+    .business-plan-pdf{
+      height:4rem;
+      padding:0.8rem;
+      .pdf-img{
+        display:inline-block;
+        width:4rem;
+        height:4rem;
+        overflow:hidden;
+        border-radius:50%;
+        vertical-align:middle;
+        img{
+          width:100%;
+          height:100%;
+        }
+      }
+      .pdf-info{
+        padding-left:0.8rem;
+        width:17rem;
+        display:inline-block;
+        vertical-align:middle;
+        span{
+          color:$theme;
+        }
+      }
+    }
+  }
+}

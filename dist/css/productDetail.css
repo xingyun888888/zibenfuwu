@@ -1,0 +1,98 @@
+@import url(./normalize.css);
+.project-detail-header-container .header-img {
+  width: 100%;
+  height: 12rem; }
+  .project-detail-header-container .header-img img {
+    width: 100%;
+    height: 12rem; }
+
+.project-detail-header-container .header-content {
+  font-size: 0.9rem;
+  padding: 0 0.8rem;
+  padding-top: 0.5rem; }
+  .project-detail-header-container .header-content .header-title h3 {
+    color: #333;
+    font-weight: 500; }
+  .project-detail-header-container .header-content .header-detail p {
+    margin: 0.5rem 0;
+    padding-left: 1.2rem;
+    color: #999;
+    font-weight: 500; }
+  .project-detail-header-container .header-content .header-detail span {
+    color: #999;
+    font-weight: 500; }
+  .project-detail-header-container .header-content .header-detail .label {
+    background: url("../images/icon/label.png") no-repeat center left;
+    background-size: 3.8%; }
+    .project-detail-header-container .header-content .header-detail .label > span {
+      margin-right: 0.5rem; }
+  .project-detail-header-container .header-content .header-detail .interest {
+    background: url("../images/icon/interest.png") no-repeat center left;
+    background-size: 3.8%; }
+  .project-detail-header-container .header-content .header-detail .address {
+    background: url("../images/icon/position.png") no-repeat center left;
+    background-size: 3.8%; }
+  .project-detail-header-container .header-content .header-detail .stage {
+    background: url("../images/icon/stage.png") no-repeat center left;
+    background-size: 3.8%; }
+  .project-detail-header-container .header-content .header-detail .time {
+    background: url("../images/icon/time.png") no-repeat center left;
+    background-size: 3.8%; }
+
+.main-container {
+  padding: 0.8rem; }
+  .main-container .title {
+    margin: 0.5rem 0; }
+    .main-container .title b {
+      display: inline-block;
+      width: 0.3rem;
+      background-color: #539ffd;
+      height: 1rem;
+      vertical-align: middle;
+      margin-right: 0.3rem; }
+    .main-container .title span {
+      font-size: 1rem;
+      display: inline-block;
+      vertical-align: middle;
+      color: #539ffd; }
+  .main-container .product-profile {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: #666; }
+    .main-container .product-profile h3 {
+      color: #333;
+      font-size: 0.9rem; }
+    .main-container .product-profile p {
+      margin: 1rem 0;
+      font-size: 1rem;
+      font-weight: 300; }
+    .main-container .product-profile .profile-detail {
+      padding: 0 0.8rem; }
+  .main-container .project-list {
+    margin-bottom: 1.5rem; }
+    .main-container .project-list .detail {
+      padding: 0 0.8rem;
+      font-size: 0.9rem;
+      color: #666; }
+      .main-container .project-list .detail p {
+        color: #666; }
+    .main-container .project-list .business-plan-pdf {
+      height: 4rem;
+      padding: 0.8rem; }
+      .main-container .project-list .business-plan-pdf .pdf-img {
+        display: inline-block;
+        width: 4rem;
+        height: 4rem;
+        overflow: hidden;
+        border-radius: 50%;
+        vertical-align: middle; }
+        .main-container .project-list .business-plan-pdf .pdf-img img {
+          width: 100%;
+          height: 100%; }
+      .main-container .project-list .business-plan-pdf .pdf-info {
+        padding-left: 0.8rem;
+        width: 17rem;
+        display: inline-block;
+        vertical-align: middle; }
+        .main-container .project-list .business-plan-pdf .pdf-info span {
+          color: #539ffd; }

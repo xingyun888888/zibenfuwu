@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>合作洽谈</title>
     <meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no" />
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/businessCooperation.css">
+    <style>
+        .mbsc-android-holo .dwv { text-align:left;text-indent:.8em; }
+    </style>
 </head>
 <body>
 <div class="businessCooperationContainer">
@@ -44,6 +47,47 @@
         </div>
         <input  />
     </div>
+
+    <ul id="treelist">
+        <li>
+            <span>奥迪</span>
+            <ul>
+                <li>奥迪A3</li>
+                <li>奥迪A4L</li>
+                <li>奥迪A6L</li>
+                <li>奥迪Q3</li>
+                <li>奥迪Q5</li>
+                <li>奥迪A4</li>
+                <li>奥迪A6</li>
+                <li>奥迪A1</li>
+                <li>奥迪A3(进口)</li>
+            </ul>
+        </li>
+        <li>
+            <span>宝马</span>
+            <ul>
+                <li>宝马X1</li>
+                <li>宝马i3</li>
+                <li>宝马1系</li>
+                <li>宝马3系</li>
+                <li>宝马5系</li>
+            </ul>
+        </li>
+        <li>
+            <span>奔驰</span>
+            <ul>
+                <li>奔驰A级</li>
+                <li>奔驰C级</li>
+                <li>奔驰E级</li>
+                <li>奔驰S级</li>
+                <li>奔驰GLK级</li>
+                <li>奔驰CLA级</li>
+                <li>奔驰CLS级</li>
+            </ul>
+        </li>
+    </ul>
+
+
     <div class="formItem">
         <div class="listTitle">
             <b></b>
@@ -64,5 +108,23 @@
     </div>
 </div>
 <script src="../js/rem.js"></script>
+<script src="../js/zepto.js"></script>
+<script>
+    $(function () {
+        var i = Math.floor($('#treelist>li').length / 2),
+            j = Math.floor($('#treelist>li').eq(i).find('ul li').length / 2);
+        $("#treelist").mobiscroll().treelist({
+            theme: "android-ics light",
+            lang: "zh",
+            defaultValue: [i,j],
+            cancelText: null,
+            placeholder: '选择行业',
+            headerText: function (valueText) { return "选择行业"; },
+            formatResult: function (array) { //返回自定义格式结果
+                return $('#treelist>li').eq(array[0]).children('span').text() +' '+ $('#treelist>li').eq(array[0]).find('ul li').eq(array[1]).text().trim(' ');
+            }
+        });
+    })
+</script>
 </body>
 </html>

@@ -2,12 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>产品详情</title>
     <meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no" />
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/productDetail.css">
 </head>
 <body>
-
+    <div class="project-detail-header-container">
+        <div class="header-img">
+            <img src="../images/project/default.png" alt="">
+        </div>
+        <div class="header-content">
+            <div class="header-title">
+                <h3>创投达人会</h3>
+            </div>
+            <div class="header-detail">
+                <p class="label"><span>在线教育</span><span>大数据</span><span>项目类别</span></p>
+                <p class="interest">92位投资人对此项目感兴趣</p>
+                <p class="address">地址:深圳</p>
+                <p class="stage">当前阶段:B轮</p>
+                <p class="time">上线时间:2017-02-20</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="product-profile">
+            <div class="title">
+                <b></b>
+                <span>公司简介</span>
+            </div>
+            <div class="profile-detail">
+                <p>
+                    深圳市前海智媒网络科技有限公司是第一个入驻深交所大楼的互联网公司，专注于中小企业四板服务与资本在线教育业务，同时也是国有参股、市场化运营的新型资本市场创新平台，由前海股权交易中心与前海凌海发展有限公司联合投资设立。依托股东前海股交中心的强大资源优势，用资本力量服务实体经济，促进中小企业发展。公司充分发挥“互联网+资本市场+资本教育”的基因优势，为企业提供资本教育、四板服务、投融资与上市服务。目前已成长为中国四板第一服务商，中国资本在线教育第一品牌。
+                </p>
+                <p>
+                    前海智媒是国内第一家推广“新四板”品牌的机构，也是第一个向全国推广四板业务的机构。总部设在深交所运营中心39楼，互联网总部设在深圳创业投资大厦17楼，全国下设14个运营中心，海外两个运营中心，服务已覆盖数十万家中小企业。公司荣誉顾问张亦春教授是中国金融学科终身成就奖得主。
+                </p>
+            </div>
+        </div>
+        <div class="project-list">
+            <div class="title">
+                <b></b>
+                <span>更多资料</span>
+            </div>
+            <div class="detail business-plan-pdf" v-if="bp">
+                <div class="pdf-img">
+                    <img src="../images/capitalService/bp.png" alt="">
+                </div>
+                <div class="pdf-info">
+                    <a href="#">
+                        <span>项目介绍3.0.pdf (1.9M)</span>
+                        <p>建议使用wifi查看</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/rem.js"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 @import "./valiable.scss";
 .headImage{
   img{
-
+    width:100%;
   }
 }
 .title{
@@ -25,17 +25,16 @@
 .companyProfileContainer{
   padding:0.8rem;
   .companyProfile,.industryProfile{
-    padding-top:0.8rem;
     margin:1rem 0;
-    font-size:0.9rem;
-    color:$gray9;
+    font-size:1rem;
+    color:$gray6;
     h3{
       color:$gray3;
-      font-size:0.9rem;
+      font-size:1rem;
     }
     p{
       margin:1rem 0;
-      font-size:0.9rem;
+      font-size:1rem;
       font-weight:300;
     }
     .legalNotice{
